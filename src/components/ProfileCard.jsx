@@ -7,18 +7,30 @@ function ProfileCard() {
         <div className="user-info">
           <img src={avatarImg} alt="avatar image" className="avatar-img" />
           <h2 className="user-name">Jessica Randall</h2>
-          <h3>London,United Kingdom</h3>
-          <p>"Front-end developer and avid reader."</p>
+          <h3 className="user-location">London,United Kingdom</h3>
+          <p className="user-description">
+            "Front-end developer and avid reader."
+          </p>
         </div>
       </div>
       <div className="body">
-        <ul className="social-network">
-          <li className="social-network__item">GitHub</li>
-          <li className="social-network__item">Frontend Mentor</li>
-          <li className="social-network__item">Linkedin</li>
-          <li className="social-network__item">Twitter</li>
-          <li className="social-network__item">Instagram</li>
-        </ul>
+        <div className="social-network">
+          <button className="social-network__btn" type="button">
+            GitHub
+          </button>
+          <button className="social-network__btn" type="button">
+            Frontend Mentor
+          </button>
+          <button className="social-network__btn" type="button">
+            Linkedin
+          </button>
+          <button className="social-network__btn" type="button">
+            Twitter
+          </button>
+          <button className="social-network__btn" type="button">
+            Instagram
+          </button>
+        </div>
       </div>
     </div>
   );
