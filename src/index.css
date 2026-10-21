@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  /* Colors */
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-size-body: 14px;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* Layout & Spacing */
+  --border-radius-card: 12px;
+  --border-radius-btn: 8px;
+  --transition-fast: 0.2s ease-in-out;
+}
+/* استایل‌های پایه و ریست عمومی */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    /* سایز فونت متن اصلی */
+    background-color: var(--color-primary);
+    min-height: 100vh;
+    
+}
