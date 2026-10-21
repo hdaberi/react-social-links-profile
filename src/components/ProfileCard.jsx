@@ -1,19 +1,13 @@
 import avatarImg from "../assets/images/avatar-jessica.jpeg";
-const socialList = [
-  { id: 1, socialName: "GitHub" },
-  { id: 2, socialName: "Frontend Mentor" },
-  { id: 3, socialName: "Linkedin" },
-  { id: 4, socialName: "Twitter" },
-  { id: 5, socialName: "Instagram" },
-];
-function ProfileCard() {
+
+function ProfileCard({ socialList }) {
   return (
     <div className="profile-card">
       <div className="header">
         <UserInfo />
       </div>
       <div className="body">
-        <SocialNetworkBtn />
+        <SocialNetworkBtn socialList={socialList} />
       </div>
     </div>
   );
@@ -21,7 +15,7 @@ function ProfileCard() {
 
 export default ProfileCard;
 
-function SocialNetworkBtn() {
+function SocialNetworkBtn({ socialList }) {
   return (
     <div className="social-network">
       {socialList.map((item) => {
